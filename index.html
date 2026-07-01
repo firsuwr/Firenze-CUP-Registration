@@ -174,13 +174,8 @@
 </div>
 
 <script>
-// ═══════════════════════════════════════════════════════════════════
-// APPS SCRIPT URL — the web app endpoint that receives the data
-// ═══════════════════════════════════════════════════════════════════
 const APPS_URL = 'https://script.google.com/macros/s/AKfycbwBCUHWePT3em7ArfBge_M_JESIMJ24cGQzd2igYffYPXXsOP7Q6Z_w8ppdgWLmKJPN/exec';
-
 let players = [], nextId = 1;
-
 function addPlayer() {
   players.push({ id: nextId++, num: '', first: '', last: '', photoFile: null });
   renderPlayers();
